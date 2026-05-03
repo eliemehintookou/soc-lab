@@ -1,4 +1,6 @@
-# 🔐 SOC Lab – Detection & Monitoring Project
+# 🔐 SOC Lab – Real-World Detection Project
+
+Hands-on cybersecurity lab simulating a Security Operations Center (SOC) with intrusion detection and log analysis.
 
 ## 🎯 Project Overview
 
@@ -105,6 +107,17 @@ Wazuh dashboard deployment was successful, but web access may be limited in a vi
 * Advanced attack simulations (Nmap, Hydra)
 * Dashboard tuning
 
+
+## 📸 Screenshots
+
+### ICMP Detection
+![ICMP](screenshots/icmp-detection.png)
+
+### SSH Attack Detection
+![SSH](screenshots/ssh-failed-login.png)
+
+### JSON Log Analysis
+![JSON](screenshots/eve-json-analysis.png)
 ---
 
 ## 👨‍💻 Author
