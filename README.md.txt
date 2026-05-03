@@ -118,7 +118,23 @@ Wazuh dashboard deployment was successful, but web access may be limited in a vi
 
 ### JSON Log Analysis
 ![JSON](screenshots/eve-json-analysis.png)
+
+###Network Scan Detection (Nmap)
+
+![Nmap](screenshots/scan.png)
+
 ---
+
+### Network Scan Detection (Nmap)
+
+A SYN scan was performed using Nmap and analyzed in real time using tcpdump.
+
+Observed TCP flags:
+- SYN (connection attempt)
+- SYN-ACK (response)
+- RST (connection reset)
+
+This demonstrates how reconnaissance activity can be identified at packet level.
 
 ## 👨‍💻 Author
 
