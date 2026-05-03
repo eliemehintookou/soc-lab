@@ -123,6 +123,10 @@ Wazuh dashboard deployment was successful, but web access may be limited in a vi
 
 ![Nmap](screenshots/scan.png)
 
+## 🏗️ Architecture
+
+![Architecture](architecture/architecture.png)
+
 ---
 
 ### Network Scan Detection (Nmap)
@@ -135,6 +139,62 @@ Observed TCP flags:
 - RST (connection reset)
 
 This demonstrates how reconnaissance activity can be identified at packet level.
+
+
+## ⚙️ How to Reproduce
+
+### 1. Install Suricata
+
+```bash
+sudo apt update
+sudo apt install suricata -y
+```
+
+### 2. Start Suricata
+
+```bash
+sudo systemctl start suricata
+```
+
+### 3. Generate Network Traffic
+
+```bash
+ping -c 4 8.8.8.8
+```
+
+### 4. Check Alerts
+
+```bash
+sudo tail -n 10 /var/log/suricata/fast.log
+```
+
+### 5. Simulate SSH Attack
+
+```bash
+sudo grep "Failed password" /var/log/auth.log
+```
+
+### 6. Run Nmap Scan
+
+```bash
+sudo nmap -sS -p 1-100 127.0.0.1
+```
+
+### 7. Analyze Traffic
+
+```bash
+sudo tcpdump -i lo tcp
+```
+
+
+## 📚 Lessons Learned
+
+* Understanding how network traffic can be analyzed at packet level (TCP flags)
+* Identifying brute force attacks through system logs
+* Using Suricata for intrusion detection
+* Deploying a SIEM (Wazuh) for log management
+* Troubleshooting network and configuration issues in a virtual lab environment
+
 
 ## 👨‍💻 Author
 
