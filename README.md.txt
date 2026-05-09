@@ -196,6 +196,27 @@ sudo tcpdump -i lo tcp
 * Troubleshooting network and configuration issues in a virtual lab environment
 
 
+## Final Troubleshooting Phase
+
+The lab environment successfully achieved:
+
+- Wazuh Manager deployment
+- Wazuh Agent installation
+- Suricata IDS deployment
+- Internal network segmentation
+- Agent enrollment
+- Port accessibility validation
+- SIEM architecture deployment
+
+During the final integration phase, TCP communication on port 1514 reached the manager successfully, but the service returned a "Connection refused" response.
+
+This troubleshooting phase provided practical experience in:
+- Linux networking
+- VirtualBox internal networking
+- SIEM troubleshooting
+- Wazuh agent/manager communication
+- TCP service validation
+
 ## 👨‍💻 Author
 
 MEHINTO OKOU Elie Virgile  – SOC Analyst path
