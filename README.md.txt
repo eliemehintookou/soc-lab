@@ -73,3 +73,25 @@ Les captures sont disponibles dans le dossier :
 
 ```text
 screenshots/
+
+## Wazuh SIEM Monitoring
+
+### Objectif
+Déployer une plateforme SIEM avec Wazuh afin de superviser une machine Windows 10 depuis un serveur Ubuntu.
+
+### Technologies
+- Wazuh
+- Ubuntu
+- Windows 10
+- VirtualBox
+
+### Fonctionnalités
+- Collecte des logs Windows
+- Détection des échecs de connexion
+- Monitoring sécurité
+- Dashboard SIEM
+
+### Résultats
+- Agent Windows connecté
+- Logs reçus dans Wazuh
+- Alertes visibles dans le dashboard
